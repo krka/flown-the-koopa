@@ -1,25 +1,27 @@
 digraph G {
-
   start [shape=Mdiamond, fillcolor="lightblue", style=filled];
 
   start [label="+10 coin, +ticket"];
-  start -> page99;
+  start -> page99 [penwidth=3];
 
   page10 [shape=MSquare, label="10"];
-  page10 -> page67 [label="if remote"];
+  page10 -> page67 [label="if remote", penwidth=3];
   page10 -> page75 [label="if not remote"];
 
   page11 [shape=MSquare, label="11\n+10 coin"];
-  page11 -> page104, page31;
+  page11 -> page104;
+  page11 -> page31 [penwidth=3];
 
   page13 [shape=MSquare, label="13\n+popcorn\n-15 coin"];
-  page13 -> page124;
+  page13 -> page124 [penwidth=3];
 
   page15 [shape=MSquare, label="15"];
-  page15 -> page119, page18, page71;
+  page15 -> page119;
+  page15 -> page18 [penwidth=3];
+  page15 -> page71;
 
   page18 [shape=MSquare, label="18"];
-  page18 -> page57;
+  page18 -> page57 [penwidth=3];
 
   page21 [shape=MSquare, label="21", fillcolor="pink", style=filled];
 
@@ -30,16 +32,17 @@ digraph G {
   page24 -> page116;
 
   page26 [shape=MSquare, label="26"];
-  page26 -> page37;
+  page26 -> page37 [penwidth=3];
 
   page28 [shape=MSquare, label="28"];
-  page28 -> page56;
+  page28 -> page56 [penwidth=3];
 
   page31 [shape=MSquare, label="31"];
-  page31 -> page73;
+  page31 -> page73 [penwidth=3];
 
   page32 [shape=MSquare, label="32\n-ticket"];
-  page32 -> page111, page119;
+  page32 -> page111 [penwidth=3];
+  page32 -> page119;
 
   page34 [shape=MSquare, label="34"];
   page34 -> page98;
@@ -48,59 +51,66 @@ digraph G {
   page36 -> page96;
   
   page37 [shape=MSquare, label="37"];
-  page37 -> page118, page54;
+  page37 -> page118;
+  page37 -> page54 [penwidth=3];
   
   page40 [shape=MSquare, label="40"];
-  page40 -> page64;
+  page40 -> page64 [penwidth=3];
 
   page42 [shape=MSquare, label="42"];
-  page42 -> page83 [label="flower"];
+  page42 -> page83 [label="flower", penwidth=3];
   page42 -> page98 [label="no flower"];
 
   page43 [shape=MSquare, label="43"];
-  page43 -> page52, page32;
+  page43 -> page52 [penwidth=3];
+  page43 -> page32 [penwidth=3];
 
   page46 [shape=MSquare, label="46", color="red"];
 
   page47 [shape=MSquare, label="47", color="red"];
 
   page49 [shape=MSquare, label="49"];
-  page49 -> page11, page73;
+  page49 -> page11 [penwidth=3];
+  page49 -> page73;
 
   page52 [shape=MSquare, label="52\n+15 coin"];
-  page52 -> page119;
+  page52 -> page119 [penwidth=3];
 
   page54 [shape=MSquare, label="54\n+10 coin"];
-  page54 -> page95;
+  page54 -> page95 [penwidth=3];
 
   page56 [shape=MSquare, label="56"];
-  page56 -> page121 [label="feather"];
-  page56 -> page109 [label="not feather"];
+  page56 -> page121 [label="feather", penwidth=3];
+  page56 -> page109 [label="not feather", penwidth=3];
 
   page57 [shape=MSquare, label="57"];
-  page57 -> page106, page89;
+  page57 -> page106 [penwidth=3];
+  page57 -> page89;
 
   page60 [shape=MSquare, label="60"];
   page60 -> page86;
 
   page61 [shape=MSquare, label="61"];
-  page61 -> page13 [label=">= 15 coin"];
-  page61 -> page124 [label="< 15 coin"];
+  page61 -> page13 [label=">= 15 coin", penwidth=3];
+  page61 -> page124 [label="< 15 coin", penwidth=3];
 
   page64 [shape=MSquare, label="64"];
-  page64 -> page34, page10;
+  page64 -> page34;
+  page64 -> page10 [penwidth=3];
   
   page67 [shape=MSquare, label="67\n+300 coin"];
-  page67 -> page80;
+  page67 -> page80  [penwidth=3];
 
   page69 [shape=MSquare, label="69"];
-  page69 -> page28, page57;
+  page69 -> page28;
+  page69 -> page57 [penwidth=3];
 
   page71 [shape=MSquare, label="71"];
   page71 -> page28;
 
   page73 [shape=MSquare, label="73"];
-  page73 -> page114, page22;
+  page73 -> page114 [penwidth=3];
+  page73 -> page22;
 
   page75 [shape=MSquare, label="75", fillcolor="pink", style=filled];
 
@@ -111,69 +121,74 @@ digraph G {
   page80 [shape=MSquare, label="80", fillcolor="green", style=filled];
 
   page82 [shape=MSquare, label="82"];
-  page82 -> page37;
+  page82 -> page37 [penwidth=3];
 
   page83 [shape=MSquare, label="83"];
-  page83 -> page24, page40;
+  page83 -> page24;
+  page83 -> page40 [penwidth=3];
 
   page86 [shape=MSquare, label="86"];
-  page86 -> page26 [label="popcorn"];
-  page86 -> page116 [label="no popcorn"];
+  page86 -> page26 [label="popcorn", penwidth=3];
+  page86 -> page116 [label="no popcorn", penwidth=3];
 
   page89 [shape=MSquare, label="89", color="red"];
 
   page91 [shape=MSquare, label="91"];
-  page91 -> page78, page42;
+  page91 -> page78;
+  page91 -> page42 [penwidth=3];
 
   page94 [shape=MSquare, label="94\n-all coin"];
   page94 -> page114;
 
   page95 [shape=MSquare, label="95"];
   page95 -> page21 [label="light"];
-  page95 -> page102 [label="no light"];
+  page95 -> page102 [label="no light", penwidth=3];
 
 
   page96 [shape=MSquare, label="96"];
-  page96 -> page116, page82;
+  page96 -> page116;
+  page96 -> page82 [penwidth=3];
   
   page98 [shape=MSquare, label="98", fillcolor="pink", style=filled];
   
-  page99 [shape=MSquare, label="99\nA: +feather +light\nB: +flower +light\nC: +flower +feather"];
-  page99 -> page43;
+  page99 [shape=MSquare, label="99\nWrong:\nA: +feather +light\nB: +flower +light\nCorrect:\nC: +flower +feather"];
+  page99 -> page43 [penwidth=3];
 
   page102 [shape=MSquare, label="102"];
-  page102 -> page91;
+  page102 -> page91 [penwidth=3];
 
   page104 [shape=MSquare, label="104", fillcolor="pink", style=filled];
 
   page106 [shape=MSquare, label="106\n+remote\n+10 coin"];
-  page106 -> page28;
+  page106 -> page28 [penwidth=3];
 
   page109 [shape=MSquare, label="109"];
-  page109 -> page49;
+  page109 -> page49 [penwidth=3];
 
   page111 [shape=MSquare, label="111"];
-  page111 -> page15, page46;
+  page111 -> page15 [penwidth=3];
+  page111 -> page46;
 
   page114 [shape=MSquare, label="114"];
-  page114 -> page86;
+  page114 -> page86 [penwidth=3];
 
   page116 [shape=MSquare, label="116"];
-  page116 -> page96, page36;
+  page116 -> page96 [penwidth=3];
+  page116 -> page36;
 
   page118 [shape=MSquare, label="118", fillcolor="pink", style=filled];
 
   page119 [shape=MSquare, label="119"];
-  page119 -> page61 [label="ticket"];
+  page119 -> page61 [label="ticket", penwidth=3];
   page119 -> page76 [label="no ticket"];
  
   page121 [shape=MSquare, label="121"];
-  page121 -> page126, page60;
+  page121 -> page126 [penwidth=3];
+  page121 -> page60;
 
   page124 [shape=MSquare, label="124"];
-  page124 -> page69;
+  page124 -> page69 [penwidth=3];
  
   page126 [shape=MSquare, label="126\n-feather"];
-  page126 -> page109;
-
+  page126 -> page109 [penwidth=3];
 }
