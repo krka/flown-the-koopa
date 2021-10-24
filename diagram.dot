@@ -65,9 +65,9 @@ digraph G {
   page43 -> page52 [penwidth=3];
   page43 -> page32 [penwidth=3];
 
-  page46 [shape=MSquare, label="46", color="red"];
+  page46 [shape=MSquare, label="46", fillcolor="pink", style=filled];
 
-  page47 [shape=MSquare, label="47", color="red"];
+  page47 [shape=MSquare, label="47", fillcolor="pink", style=filled];
 
   page49 [shape=MSquare, label="49"];
   page49 -> page11 [penwidth=3];
@@ -131,7 +131,7 @@ digraph G {
   page86 -> page26 [label="popcorn", penwidth=3];
   page86 -> page116 [label="no popcorn", penwidth=3];
 
-  page89 [shape=MSquare, label="89", color="red"];
+  page89 [shape=MSquare, label="89", fillcolor="pink", style=filled];
 
   page91 [shape=MSquare, label="91"];
   page91 -> page78;
