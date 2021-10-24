@@ -5,8 +5,8 @@ digraph G {
   start -> page99 [penwidth=3];
 
   page10 [shape=MSquare, label="10"];
-  page10 -> page67 [label="if remote", penwidth=3];
-  page10 -> page75 [label="if not remote", color=red];
+  page10 -> page67 [label="remote", penwidth=3];
+  page10 -> page75 [label="not remote", color=red];
 
   page11 [shape=MSquare, label="11\n+10 coin"];
   page11 -> page104 [color=red];
