@@ -7,4 +7,6 @@ Visualization of choice graph in Flown the koopa adventure book:
 * https://www.mariowiki.com/Flown_the_Koopa
 
 
+![Visualization](https://raw.githubusercontent.com/krka/flown-the-koopa/main/graphviz.svg)
+
 Generate visualization with https://dreampuf.github.io/GraphvizOnline
