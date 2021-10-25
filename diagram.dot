@@ -103,7 +103,7 @@ digraph G {
   page67 -> page80  [penwidth=3];
 
   page69 [shape=MSquare, label="69"];
-  page69 -> page28;
+  page69 -> page28 [color=red];
   page69 -> page57 [penwidth=3];
 
   page71 [shape=MSquare, label="71", color=red];
